@@ -31,8 +31,7 @@ import {
 import { commandManager } from '@/commands/manager';
 import { useState, useEffect } from 'react';
 import { mockSuccessApi, mockFailureApi } from '@/api';
-
-type ApiFunction = (op: any) => Promise<any>;
+import type { ApiFunction } from '@/types';
 
 export const Toolbar = () => {
   const { selectedNodeId, nodes } = useAppStore();
